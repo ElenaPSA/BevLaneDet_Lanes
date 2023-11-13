@@ -24,6 +24,6 @@ RUN MMCV_WITH_OPS=1 FORCE_CUDA=1 python setup.py develop
 WORKDIR /
 COPY requirements_annot3d.txt /tmp/
 RUN pip install --no-cache-dir -r /tmp/requirements_annot3d.txt
-COPY ./bevfusion /bevfusion
-WORKDIR /bevfusion/
+#COPY ./bevfusion /bevfusion
+#WORKDIR /bevfusion/
 RUN python setup.py develop
