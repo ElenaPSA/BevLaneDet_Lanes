@@ -25,7 +25,9 @@ WORKDIR /
 COPY requirements_annot3d.txt /tmp/
 RUN pip install --no-cache-dir -r /tmp/requirements_annot3d.txt
 RUN mkdir /bevfusion
-COPY ./bevfusion/setup.py /bevfusion/
-COPY ./bevfusion/mmdet3d /bevfusion/mmdet3d
+#COPY ./bevfusion/setup.py /bevfusion/
+#COPY ./bevfusion/mmdet3d /bevfusion/mmdet3d
+COPY setup.py /bevfusion/
+COPY mmdet3d /bevfusion/mmdet3d
 WORKDIR /bevfusion/
 RUN FORCE_CUDA=1 python setup.py develop
