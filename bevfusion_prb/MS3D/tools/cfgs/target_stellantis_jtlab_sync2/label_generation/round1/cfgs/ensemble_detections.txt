@@ -1,0 +1,5 @@
+/mnt/data3/lsaroul/pseudo-gt-labelling/bevfusion/viz_psa/predictions.pkl
+/mnt/data3/lsaroul/pseudo-gt-labelling/bevfusion/viz_psa_reduced/predictions.pkl
+/mnt/data3/lsaroul/pseudo-gt-labelling/bevfusion/viz_psa_sweep5/predictions.pkl
+/mnt/data3/lsaroul/pseudo-gt-labelling/bevfusion/viz_psa_reduced_sweep5/predictions.pkl
+/mnt/data3/lsaroul/pseudo-gt-labelling/bevfusion/viz_psa_onlylidar/predictions.pkl
