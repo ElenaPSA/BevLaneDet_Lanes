@@ -14,7 +14,7 @@ importlib-resources==5.4.0
 tqdm==4.64.0
 joblib==1.1.0
 joblib_progress==1.0.3
-shapely==2.0.0
+shapely
 torch>=1.9.0
 torchvision>=0.10.0
 timm==0.3.2
