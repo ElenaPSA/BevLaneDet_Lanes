@@ -31,14 +31,14 @@ RUN pip install --no-cache-dir -r /tmp/requirements_annot3d.txt
 
 # Setup of bevfusion
 RUN mkdir /bevfusion
-COPY ./bevfusion/setup.py /bevfusion/
-COPY ./bevfusion/mmdet3d /bevfusion/mmdet3d
+COPY setup.py /bevfusion/
+COPY mmdet3d /bevfusion/mmdet3d
 WORKDIR /bevfusion/
 RUN FORCE_CUDA=1 python setup.py develop
 
 # Setup of MS3D
 WORKDIR /
-COPY ./MS3D /MS3D/
+COPY MS3D /MS3D/
 WORKDIR /MS3D/
 RUN FORCE_CUDA=1 python setup.py develop
 WORKDIR /MS3D/tracker/
@@ -48,7 +48,7 @@ RUN apt-get update && apt-get install cmake libopencv-dev -y
 
 # Setup of trackingtools
 WORKDIR /
-COPY ./trackingtools /trackingtools/
+COPY trackingtools /trackingtools/
 WORKDIR /trackingtools/
 RUN python setup.py develop
 
