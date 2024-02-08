@@ -1,6 +1,6 @@
 albumentations==1.1.0
 numpy==1.22.2
-pandas==1.1.5
+pandas
 scalabel==0.3.0
 open3d==0.15.2
 scikit-build==0.14.1
